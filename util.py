@@ -71,11 +71,11 @@ def is_straight(cards):
             ranks[2] == ranks[3] - 1 and
             ranks[3] == ranks[4] - 1):
         return True
-    elif (ranks[0] == 14 and
-          ranks[1] == 2 and
+    elif (ranks[1] == 2 and
           ranks[2] == 3 and
           ranks[3] == 4 and
-          ranks[4] == 5):
+          ranks[4] == 5 and
+          ranks[0] == 14):
         return True
 
     return False
